@@ -191,7 +191,9 @@ def updateseassion():
         all_matches.append(scorecard)
 
     return all_matches
-
+@app.route('/')
+def home():
+    return "Hello, World!"
 
 @app.route("/modify-seassion2008", methods=['GET', 'POST'])
 def modify_seassion2008():
