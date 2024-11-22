@@ -1,6 +1,6 @@
 from datetime import datetime
 
-# from flask_cors import CORS
+from flask_cors import CORS
 import os
 from flask import Flask, jsonify, redirect, url_for, request
 from pymongo import MongoClient
@@ -13,6 +13,7 @@ sys.setrecursionlimit(2500)
 
 
 app = Flask(__name__)
+CORS(app)
 
 # Replace with your MongoDB Atlas connection string
 MONGO_URI = "mongodb+srv://karhaleashish007:ashish%40595322@cluster0.azt4g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
