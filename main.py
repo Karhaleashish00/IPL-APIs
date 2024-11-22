@@ -3,15 +3,13 @@ from datetime import datetime
 # from flask_cors import CORS
 from flask import Flask, jsonify, redirect, url_for, request
 from pymongo import MongoClient
-from urllib.parse import quote_plus
 import sys
 
 from pymongo import UpdateOne
 
 # Increase recursion limit
 sys.setrecursionlimit(2500)
-password = "ashish@595322"
-escaped_password = quote_plus(password)
+
 
 app = Flask(__name__)
 
